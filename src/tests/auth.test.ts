@@ -21,7 +21,7 @@ describe("getAPIKey", () => {
             authorization: "ApiKey",
         };
         const result = getAPIKey(headers);
-        expect(result).not.toBeNull()
+        expect(result).toBeNull();
     });
 
     test("should return the API key if the authorization header is valid", () => {
